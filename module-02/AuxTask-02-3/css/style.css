@@ -1,0 +1,13 @@
+ul {
+  margin: 10px auto;
+  padding: 1% 2%;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  list-style-image: url('../img/list.png');
+  width: 200px;
+  color: #5E6676;
+  box-shadow: 0 0 10px;
+}
+li {
+  padding: 0.5em;
+}
