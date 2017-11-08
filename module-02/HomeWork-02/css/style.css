@@ -1,0 +1,40 @@
+body {
+  background-image: url("../img/page-bg.png");
+  font-family: 'Arial Regular', sans-serif;
+}
+.wrapper {
+  width: 404px;
+  margin: 240px auto 240px;
+  padding: 60px 38px;
+  background-color: #fff;
+}
+.principles {
+  padding-bottom: 42px;
+  border-bottom: 1px solid #dedbdb;
+}
+.principles p {
+  width: 330px;
+}
+h1, h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+}
+h2 {
+  margin-top: 50px;
+}
+h3, li {
+  font-size: 14px;
+}
+p {
+  font-size: 12px;
+}
+img {
+  display: block;
+}
+ul {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 24px;
+}
+li {
+  padding: 12px 0;
