@@ -1,0 +1,161 @@
+body {
+  background-image: url("../img/page-bg.png");
+  counter-reset: principles;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 230px auto;
+  padding: 70px 62px;
+  background-color: #fff;
+  font-family: 'Arial Regular', sans-serif;
+  color: #263555;
+}
+
+.top-block {
+  margin: 0;
+  padding: 0 0 50px 0;
+  width: 900px;
+  border-bottom: 1px solid #dedbdb;
+}
+
+h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 15px;
+  line-height: 1.26;
+}
+
+P {
+  font-size: 13px;
+  color: #4e5050;
+  line-height: 1.46;
+}
+
+img {
+  padding-right: 25px;
+  float: left;
+  display: block;
+}
+
+.main, .notes {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+
+.main {
+  width: 666px;
+  padding-right: 20px;
+}
+
+.notes {
+  width: 204px;
+}
+
+ol {
+  position: relative;
+  list-style-type: none;
+}
+
+ol li {
+  counter-increment: principles;
+}
+
+ol li::before {
+  position: absolute;
+  left: 0px;
+  content: counter(principles);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #5099ba;
+  color: #fff;
+  background-color: #38afe5;
+}
+
+ul {
+  padding-left: 0;
+  height: 190px;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  width: 300px;
+  padding: 10px 0;
+}
+
+ul li::before {
+  content: url(../img/list.png);
+  margin-right: 20px;
+}
+
+.quotes {
+  position: relative;
+  width: 162px;
+  height: 148px;
+  padding: 20px;
+  border: 1px solid #dedbdb;
+  border-radius: 2%;
+  background-color: #fcfafa;
+}
+
+.quotes p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.46;
+  color: #263555;
+}
+
+.quotes::before,
+.quotes::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.quotes::after {
+  top: 187px;
+  right: 87px;
+  border-width: 27px 15px 0 15px;
+  border-color: #fcfafa transparent transparent transparent;
+}
+
+.quotes::before {
+  top: 188px;
+  right: 86.5px;
+  border-width: 28px 15.5px 0 15.5px;
+  border-color: #dedbdb transparent transparent transparent;
+}
+
+.quotes p::before {
+  content: '\201c';
+  margin-right: 5px;
+}
+
+.quotes p::after {
+  content: '\201d';
+}
+
+.bottom-block h2 {
+  margin-top: 60px;
+}
+
+.bottom-block h4 {
+  margin-top: 70px;
+}
+
+.notes.bottom-block > h4,
+.notes.bottom-block > p {
+  text-align: center;
+}
