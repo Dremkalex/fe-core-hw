@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background: linear-gradient(to bottom, #000 0%, rgba(15,15,110,1) 22%, rgba(197,23,240,1) 100%);
+}
+
+ul.social-web {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  background-color: inherit;
+}
+
+.social-web li {
+  background-color: red;
+  border-radius: 50%;
+}
+
+
+.social-web a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/css_sprites.png);
+  background-size: 240px 240px;
+}
+
+.facebook {
+  /*width: 40px; height: 40px;*/
+  background: url('../css_sprites.png') -10px -10px;
+}

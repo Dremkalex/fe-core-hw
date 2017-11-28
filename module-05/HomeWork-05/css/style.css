@@ -1,5 +1,5 @@
 body {
-  background-image: url('../img/layer-bg.png');
+  background-image: url('../img/layer-bg.jpg');
 }
 
 .wrapper {
@@ -147,7 +147,7 @@ main {
   display: block;
   width: 50%;
   height: 100%;
-  background-color: #38afe5;
+  background-color: rgba(56, 175, 229, 1);
 }
 
 .left-button,
@@ -163,6 +163,11 @@ main {
 
 .right-button {
   background-image: url(../img/arrow-right.png);
+}
+
+.left-button:hover,
+.right-button:hover {
+  background-color: rgba(56, 175, 229, .5);
 }
 
 h2 {
