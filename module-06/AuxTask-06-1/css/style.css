@@ -34,11 +34,11 @@ ul.social-web {
   background-size: 240px 240px;
 }
 
-.tweeter {
+.twitter {
   background: url('../css_sprites.png') -10px -10px;
 }
 
-.tweeter:hover,
+.twitter:hover,
 .facebook:hover,
 .google:hover,
 .linkedin:hover {
