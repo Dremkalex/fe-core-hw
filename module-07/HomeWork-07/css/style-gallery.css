@@ -1,0 +1,56 @@
+body {
+  background-image: url('../img/page-bg.jpg');
+}
+
+h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 32px;
+  color: #263555;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  max-width: 1024px;
+  width: 70vw;
+  padding: 60px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+ul.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.gallery li {
+  position: relative;
+  display: block;
+  width: 288px;
+  height: 154px;
+  margin: 20px 0;
+  background-color: #000;
+}
+
+.zoom {
+  display: none;
+  width: 33px;
+  height: 33px;
+  background-image: url('../img/icon.png');
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  left: 127px;
+}
+
+.gallery li:hover .zoom {
+  display: block;
+}
+
+.gallery li:hover img{
+  opacity: 0.5;
+}
