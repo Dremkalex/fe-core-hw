@@ -1,0 +1,19 @@
+@media (max-width: 480px) {
+  .footer-list li:last-child {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-list li:last-child p,
+  .footer-list li:last-child img {
+    display: inline-block;
+  }
+
+  .footer-list img {
+    padding-right: 5px;
+  }
+
+  .footer-list li:last-child p {
+    padding: 5px 0 0 5px;
+  }
+}

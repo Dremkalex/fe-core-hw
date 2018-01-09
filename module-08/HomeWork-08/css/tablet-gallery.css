@@ -1,0 +1,23 @@
+@media (min-width: 481px) and (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .gallery li {
+    flex-basis: 48%;
+  }
+
+  .gallery li:last-child {
+    display: none;
+  }
+}

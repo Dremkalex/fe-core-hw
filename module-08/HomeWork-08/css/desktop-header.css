@@ -1,0 +1,36 @@
+@media (min-width: 769px) {
+  .menu {
+    justify-content: space-around;
+  }
+
+  .menu_item {
+    text-align: center;
+  }
+
+  .menu_item a {
+    font-size: 1.75rem;
+  }
+
+  ul.submenu {
+    width: 66px;
+    left: -7px;
+  }
+
+  ul.submenu::before {
+    left: 30px;
+  }
+
+  .submenu a {
+    font-size: 1.25rem;
+   }
+
+  h1 {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  h1 > a {
+    font-size: 3.75rem;
+  }
+}

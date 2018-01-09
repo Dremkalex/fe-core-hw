@@ -1,0 +1,112 @@
+body {
+  background-image: url('../img/page-bg.jpg');
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1024px;
+  width: 70vw;
+  padding: 60px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+section {
+  width: 65%;
+}
+
+aside {
+  width: 30%;
+}
+
+h2 {
+  margin: 40px 0 50px 0;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 32px;
+  color: #263555;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #263555;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 10px;
+  color: #000;
+}
+
+p.price {
+  color: #8eccee;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.gallery, .tour {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.tour {
+  margin-bottom: 40px;
+}
+
+.tour img{
+  display: block;
+  width: 133px;
+  height: 114px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+button {
+  width: 60px;
+  height: 20px;
+  border: 1px solid #b1aaaa;
+  background-color: #fbf6f8;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+select {
+  width: 80%;
+  background: #fcfafa;
+  font-size: 10px;
+  padding: 5px;
+  color: #868f8f;
+}
+
+option {
+  background-color: #e3e2e2;
+  color: #fff;
+  border: 1px solid #d1cccc;
+}
+
+.browse select {
+  margin-bottom: 50px;
+}
+
+.search h2 + p {
+  color: #38afe5;
+  margin-top: 0;
+}
+
+.search h2 {
+  margin-top: 20px;
+}
+
+.search select {
+   margin-bottom: 25px;
+}
