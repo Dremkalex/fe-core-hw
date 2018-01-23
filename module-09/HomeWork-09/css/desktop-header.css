@@ -1,0 +1,44 @@
+@media (min-width: 992px) {
+  .menu {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .menu_item {
+    width: 140px;
+    flex-basis: auto;
+  }
+
+  .menu_item a {
+    font-size: 1.75rem;
+  }
+
+  .submenu {
+    width: 66px;
+    top: 50px;
+    left: -7px;
+  }
+
+  .submenu::before {
+    left: 30px;
+  }
+
+  .submenu a {
+    font-size: 1.25rem;
+   }
+
+  .logo {
+    order: 0;
+    width: auto;
+   }
+
+  h1 {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  h1 > a {
+    font-size: 3.75rem;
+  }
+}

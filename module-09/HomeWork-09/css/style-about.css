@@ -1,0 +1,167 @@
+body {
+  background-image: url('../img/page-bg.jpg');
+  counter-reset: principles;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 70px 30px;
+  background-color: #fff;
+  font-family: 'Arial Regular', sans-serif;
+  color: #263555;
+}
+
+.top-block {
+  margin-bottom: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dedbdb;
+}
+
+h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1.625rem;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+h4 {
+  margin: 20px 0;
+  font-size: 0.875rem;
+  line-height: 1.26;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 0.75rem;
+  color: #4e5050;
+  line-height: 1.46;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ol {
+  position: relative;
+  padding-left: 40px;
+  list-style-type: none;
+}
+
+ol li {
+  counter-increment: principles;
+}
+
+ol li::before {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  content: counter(principles);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #5099ba;
+  color: #fff;
+  background-color: #38afe5;
+}
+
+.list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.list li {
+  padding: 10px 0;
+  font-size: 0.875rem;
+}
+
+.list li::before {
+  content: url(../img/list.png);
+  margin-right: 10px;
+}
+
+.quotes {
+  position: relative;
+  /* width: 162px; */
+  /* height: 148px; */
+  height: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #dedbdb;
+  border-radius: 2%;
+  background-color: #fcfafa;
+}
+
+.quotes p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.46;
+  color: #263555;
+}
+
+.quotes::before,
+.quotes::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.quotes::after {
+  top: 187px;
+  right: 87px;
+  border-width: 27px 15px 0 15px;
+  border-color: #fcfafa transparent transparent transparent;
+}
+
+.quotes::before {
+  top: 188px;
+  right: 86.5px;
+  border-width: 28px 15.5px 0 15.5px;
+  border-color: #dedbdb transparent transparent transparent;
+}
+
+.quotes p::before {
+  content: '\201c';
+  margin-right: 5px;
+}
+
+.quotes p::after {
+  content: '\201d';
+}
+
+.autor {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 70px 50px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  h4 {
+    font-size: 0.875rem;
+  }
+
+  img {
+    padding-right: 25px;
+    float: left;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

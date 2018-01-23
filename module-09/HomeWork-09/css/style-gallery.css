@@ -1,0 +1,72 @@
+body {
+  background-image: url('../img/page-bg.jpg');
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #263555;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 60px 30px;
+  background-color: #fff;
+}
+
+.gallery {
+  list-style-type: none;
+  padding: 0;
+}
+
+.gallery li {
+  position: relative;
+  margin: 20px 0;
+  padding: 5px;
+}
+
+.zoom {
+  display: none;
+  width: 33px;
+  height: 33px;
+  background-image: url('../img/icon.png');
+  position: absolute;
+  z-index: 2;
+  top: 44%;
+  left: 44%;
+}
+
+.image {
+  background-color: #000;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery li:hover .zoom {
+  display: block;
+}
+
+.gallery li:hover img{
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .gallery li:last-child {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .gallery li:last-child {
+    display: block;
+  }
+}

@@ -1,0 +1,152 @@
+/* @import "desktop-header.css"; */
+
+.container-width {
+  max-width: 1024px;
+  min-width: 320px;
+  /* width: 70vw; */
+}
+
+.page-header {
+  box-sizing: border-box;
+  padding-top: 30px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.menu_item {
+  position: relative;
+  flex-basis: 33%;
+  /* width: 43px; */
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu_item a {
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.menu_item a:hover {
+  color: #263555;
+  transition: .5s;
+}
+
+.logo {
+  order: -1;
+  width: 100%;
+}
+
+h1 {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  letter-spacing: 0.08em;
+  line-height: 2.4;
+}
+
+h1 > a {
+  font-size: 2.25rem;
+  font-family: 'Dorsa', sans-serif;
+  color: #263555;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 40px;
+  left: 30px;
+  top: 40px;
+  list-style-type: none;
+  padding: 0;
+  background-color: #f2f2f3;
+  text-align: center;
+  border-radius: 2%;
+}
+
+.submenu::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -3px;
+  left: 17px;
+  border-style: solid;
+  border-width: 0 2.5px 3px 2.5px;
+  border-color: transparent transparent #f2f2f3 transparent;
+}
+
+.submenu a {
+  font-size: 0.75rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #6b7488;
+ }
+
+.menu_item:hover > .submenu {
+  display: block;
+  z-index: 1;
+ }
+
+ @media (min-width: 992px) {
+   .page-header {
+     margin-bottom: 30px;
+   }
+
+   .menu {
+     flex-wrap: nowrap;
+     justify-content: space-around;
+   }
+
+   .menu_item {
+     width: 140px;
+     flex-basis: auto;
+   }
+
+   .menu_item a {
+     font-size: 1.75rem;
+   }
+
+   .submenu {
+     width: 66px;
+     top: 50px;
+     left: -7px;
+   }
+
+   .submenu::before {
+     left: 30px;
+   }
+
+   .submenu a {
+     font-size: 1.25rem;
+    }
+
+   .logo {
+     order: 0;
+     width: auto;
+    }
+
+   h1 {
+     width: 140px;
+     height: 140px;
+     margin: 0 auto;
+   }
+
+   h1 > a {
+     font-size: 3.75rem;
+   }
+ }
