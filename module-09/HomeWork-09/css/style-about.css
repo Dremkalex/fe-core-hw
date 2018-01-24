@@ -87,8 +87,6 @@ ol li::before {
 
 .quotes {
   position: relative;
-  /* width: 162px; */
-  /* height: 148px; */
   height: auto;
   margin-bottom: 30px;
   padding: 20px;
@@ -110,19 +108,19 @@ ol li::before {
   content: '';
   width: 0;
   height: 0;
+  right: 50%;
+  margin-right: -15px;
   border-style: solid;
 }
 
 .quotes::after {
-  top: 187px;
-  right: 87px;
+  bottom: -27px;
   border-width: 27px 15px 0 15px;
   border-color: #fcfafa transparent transparent transparent;
 }
 
 .quotes::before {
-  top: 188px;
-  right: 86.5px;
+  bottom: -28px;
   border-width: 28px 15.5px 0 15.5px;
   border-color: #dedbdb transparent transparent transparent;
 }
