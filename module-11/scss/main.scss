@@ -1,0 +1,28 @@
+@import 'reset';
+@import 'varibles';
+@import 'header';
+@import 'main-content';
+@import 'footer';
+
+
+body {
+  background-image: url('../img/page-bg.jpg');
+}
+
+%wrap-size-set {
+  box-sizing: border-box;
+  max-width: $max-w;
+  min-width: $min-w;
+  width: $view-w;
+  margin: 0 auto;
+}
+
+.wrapper {
+  @extend %wrap-size-set;
+  padding: 60px 5%;
+  background-color: $color-wrap;
+}
+
+a {
+  text-decoration: none;
+}
